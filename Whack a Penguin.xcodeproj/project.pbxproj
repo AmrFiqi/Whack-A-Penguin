@@ -9,24 +9,28 @@
 /* Begin PBXBuildFile section */
 		E5F009AB29BCF47000B50400 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F009AA29BCF47000B50400 /* AppDelegate.swift */; };
 		E5F009AD29BCF47000B50400 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E5F009AC29BCF47000B50400 /* GameScene.sks */; };
-		E5F009AF29BCF47000B50400 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = E5F009AE29BCF47000B50400 /* Actions.sks */; };
 		E5F009B129BCF47000B50400 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F009B029BCF47000B50400 /* GameScene.swift */; };
 		E5F009B329BCF47000B50400 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F009B229BCF47000B50400 /* GameViewController.swift */; };
 		E5F009B629BCF47000B50400 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5F009B429BCF47000B50400 /* Main.storyboard */; };
 		E5F009B829BCF47100B50400 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5F009B729BCF47100B50400 /* Assets.xcassets */; };
 		E5F009BB29BCF47100B50400 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5F009B929BCF47100B50400 /* LaunchScreen.storyboard */; };
+		E5F009C329BCF5C300B50400 /* whack.caf in Resources */ = {isa = PBXBuildFile; fileRef = E5F009C129BCF5C300B50400 /* whack.caf */; };
+		E5F009C429BCF5C300B50400 /* whackBad.caf in Resources */ = {isa = PBXBuildFile; fileRef = E5F009C229BCF5C300B50400 /* whackBad.caf */; };
+		E5F009C629BF8AF700B50400 /* WhackSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F009C529BF8AF700B50400 /* WhackSlot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E5F009A729BCF47000B50400 /* Whack a Penguin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Whack a Penguin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5F009AA29BCF47000B50400 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5F009AC29BCF47000B50400 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		E5F009AE29BCF47000B50400 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		E5F009B029BCF47000B50400 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		E5F009B229BCF47000B50400 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		E5F009B529BCF47000B50400 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E5F009B729BCF47100B50400 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5F009BA29BCF47100B50400 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E5F009C129BCF5C300B50400 /* whack.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whack.caf; sourceTree = "<group>"; };
+		E5F009C229BCF5C300B50400 /* whackBad.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whackBad.caf; sourceTree = "<group>"; };
+		E5F009C529BF8AF700B50400 /* WhackSlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhackSlot.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,14 +63,16 @@
 		E5F009A929BCF47000B50400 /* Whack a Penguin */ = {
 			isa = PBXGroup;
 			children = (
+				E5F009C529BF8AF700B50400 /* WhackSlot.swift */,
 				E5F009AA29BCF47000B50400 /* AppDelegate.swift */,
 				E5F009AC29BCF47000B50400 /* GameScene.sks */,
-				E5F009AE29BCF47000B50400 /* Actions.sks */,
 				E5F009B029BCF47000B50400 /* GameScene.swift */,
 				E5F009B229BCF47000B50400 /* GameViewController.swift */,
 				E5F009B429BCF47000B50400 /* Main.storyboard */,
 				E5F009B729BCF47100B50400 /* Assets.xcassets */,
 				E5F009B929BCF47100B50400 /* LaunchScreen.storyboard */,
+				E5F009C129BCF5C300B50400 /* whack.caf */,
+				E5F009C229BCF5C300B50400 /* whackBad.caf */,
 			);
 			path = "Whack a Penguin";
 			sourceTree = "<group>";
@@ -130,10 +136,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5F009B629BCF47000B50400 /* Main.storyboard in Resources */,
+				E5F009C329BCF5C300B50400 /* whack.caf in Resources */,
 				E5F009AD29BCF47000B50400 /* GameScene.sks in Resources */,
 				E5F009B829BCF47100B50400 /* Assets.xcassets in Resources */,
 				E5F009BB29BCF47100B50400 /* LaunchScreen.storyboard in Resources */,
-				E5F009AF29BCF47000B50400 /* Actions.sks in Resources */,
+				E5F009C429BCF5C300B50400 /* whackBad.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +153,7 @@
 			files = (
 				E5F009B129BCF47000B50400 /* GameScene.swift in Sources */,
 				E5F009B329BCF47000B50400 /* GameViewController.swift in Sources */,
+				E5F009C629BF8AF700B50400 /* WhackSlot.swift in Sources */,
 				E5F009AB29BCF47000B50400 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,8 +307,8 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,9 +316,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "amrelfiqi.Whack-a-Penguin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -327,8 +338,8 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -336,9 +347,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "amrelfiqi.Whack-a-Penguin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
